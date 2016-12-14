@@ -1,5 +1,5 @@
 # voxpol
-Repository for network analysis tools developed during the voxpol project. These tools were developed during the course of a variety of ongoing research projects. In this repository I have attempted to generalise them a little in the hope that they migth be of use / inspiration to social science researchers who are starting to get to grips with network analysis in python using igraph.  
+Repository for network analysis tools developed during the voxpol project. These tools were developed during the course of a variety of ongoing research projects. In this repository I have attempted to generalise them a little in the hope that they might be of use / inspiration to social science researchers who are starting to get to grips with network analysis in python using igraph.  
 
 There are two types of file:
 
