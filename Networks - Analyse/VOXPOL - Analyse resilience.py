@@ -1,11 +1,20 @@
-#takes in a gml network
-#analyses the amount of nodes which have to be deleted for it to break up
+###VOXPOL Network tools
+#Auth: Jonathan Bright. Last update Feb 2017
+
+#This file takes in a network in GML format
+#It analyses the amount of nodes which have to be deleted for it to break up
 #both random and targetted attacks are employed
+#To run, place this script in the same folder as your input data file
+#Change the following to the name of your file
+infile_name = "INPUT FILE1"
+#the output will be a file entitled "VOXPOL - Forum Resilience.csv"
+
+
 
 from igraph import *
 import random
 
-g = read("network name here")
+g = read(infile_name)
 ran = g.copy()
 num_nodes = g.vcount()
 

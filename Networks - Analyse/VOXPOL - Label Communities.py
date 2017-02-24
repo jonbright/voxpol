@@ -1,7 +1,17 @@
-#this script automatically assigns labels to communities
-#useful when nodes have textual information attached to them
-##e.g. could be a corpus of things they have posted
-##could be journal article titles, etc. 
+###VOXPOL Network tools
+#Auth: Jonathan Bright. Last update Feb 2017
+
+#This file takes in output from the VOXPOL - Layout Communties script, in particular a user level dataset
+#Such as "VOXPOL - Node Dataset - for visualisation.csv"
+#this script automatically assigns labels to communities based on the text data contained within them
+#this is useful when nodes have textual information attached to them
+
+#insert infile name here
+infile_name = "INPUT FILE1"
+
+
+
+
 
 
 import csv
@@ -25,7 +35,7 @@ def proc(text):
         stemmed.append(stemmer.stem(item))
     return stemmed
 
-infile = open("VOXPOL - Node Dataset - for visualisation.csv", "r", encoding="latin-1")
+infile = open(infile_name, "r", encoding="latin-1")
 
 #first get the clusters and their corpus
 #as well as a total corpus
@@ -115,6 +125,5 @@ clid_df = pd.DataFrame(d)
         
 clid_df.to_csv("VOXPOL - Cluster Names.csv")
 
-print("now combine results with the community level dataset")
 
 

@@ -1,3 +1,5 @@
+###VOXPOL Network tools
+#Auth: Jonathan Bright. Last update Feb 2017
 ##This file shows an example of using the generated layout data to make a network graphic in ggplot
 
 #auto community positions
